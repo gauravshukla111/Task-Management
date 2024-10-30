@@ -1,0 +1,153 @@
+/* General Styles */
+.taskForm, .taskEditForm {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.taskForm input, .taskForm textarea, .taskEditForm input, .taskEditForm textarea,
+.taskForm select, .taskEditForm select {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.saveButton, .viewTasksButton, .updateButton, .editButton, .deleteButton {
+  padding: 8px 12px;
+  background-color: #FF6C37;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.taskControls select {
+  margin: 10px 5px;
+  padding: 8px;
+}
+
+.taskListWrapper {
+  background-color: #f9f9f9;
+  padding: 20px;
+  overflow-x: auto; 
+}
+
+.taskList {
+  width: 100%;
+  padding: 20px;
+}
+
+.taskCard {
+  background: #fff;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.editButton {
+  background-color: #2196f3;
+}
+
+.deleteButton {
+  background-color: #f05d53;
+}
+
+
+.taskTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-size: 1rem;
+  min-width: 800px;
+}
+
+.taskTable th, .taskTable td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.taskTable th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.taskTable tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.taskTable tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Responsive Design */
+@media (max-width: 1056px) {
+  .taskListWrapper {
+    padding: 15px;
+  }
+  .taskTable th, .taskTable td {
+    padding: 8px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .taskListWrapper {
+    padding: 10px;
+  }
+  .taskTable {
+    min-width: 600px;
+  }
+  .taskTable th, .taskTable td {
+    padding: 6px;
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .taskListWrapper {
+    padding: 5px;
+  }
+  .taskTable {
+    min-width: 480px;
+  }
+  .taskTable th, .taskTable td {
+    padding: 5px;
+    font-size: 0.8rem;
+  }
+  .taskControls select {
+    padding: 6px;
+  }
+}
+
+@media (max-width: 456px) {
+  .taskTable {
+    display: block;
+    min-width: unset;
+    overflow-x: auto;
+    white-space: nowrap; 
+  }
+  .taskTable th, .taskTable td {
+    padding: 5px;
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .taskListWrapper {
+    padding: 3px;
+  }
+  .taskTable th, .taskTable td {
+    padding: 4px;
+    font-size: 0.7rem;
+  }
+  .taskControls select {
+    padding: 5px;
+  }
+}

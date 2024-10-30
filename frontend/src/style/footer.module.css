@@ -1,0 +1,102 @@
+.container {
+    width: 100%;
+    background-color: #f6f7fb;
+
+}
+
+.container p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0px;
+    font-size: 18px;
+}
+
+.heart {
+    color: red;
+    padding: 0px 10px;
+    font-size: 40px;
+    transition: transform 0.3s ease;
+}
+
+.heart:hover {
+    transform: scale(1.2);
+}
+
+
+/* For max-width: 1400px */
+@media (max-width: 1400px) {
+    .container p {
+        font-size: 17px;
+        padding: 25px 0px;
+    }
+    .heart {
+        font-size: 35px;
+    }
+}
+
+/* For max-width: 1200px */
+@media (max-width: 1200px) {
+    .container p {
+        font-size: 16px;
+        padding: 20px 0px;
+    }
+    .heart {
+        font-size: 32px;
+    }
+}
+
+/* For max-width: 1000px */
+@media (max-width: 1000px) {
+    .container p {
+        font-size: 15px;
+        padding: 20px 0px;
+    }
+    .heart {
+        font-size: 30px;
+    }
+}
+
+/* For max-width: 900px */
+@media (max-width: 900px) {
+    .container p {
+        font-size: 14px;
+        padding: 20px 0px;
+    }
+    .heart {
+        font-size: 28px;
+    }
+}
+
+/* For max-width: 600px */
+@media (max-width: 600px) {
+    .container p {
+        font-size: 13px;
+        padding: 15px 0px;
+    }
+    .heart {
+        font-size: 26px;
+    }
+}
+
+/* For max-width: 425px */
+@media (max-width: 425px) {
+    .container p {
+        font-size: 12px;
+        padding: 15px 0px;
+    }
+    .heart {
+        font-size: 24px;
+    }
+}
+
+/* For max-width: 300px */
+@media (max-width: 300px) {
+    .container p {
+        font-size: 11px;
+        padding: 10px 0px;
+    }
+    .heart {
+        font-size: 22px;
+    }
+}
